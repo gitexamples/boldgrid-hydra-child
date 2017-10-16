@@ -1,7 +1,7 @@
 <?php
 
 function boldgrid_enqueue_styles() {
-    $parent_style = 'boldgrid-themename';
+    $parent_style = 'boldgrid-hydra';
     wp_enqueue_style( $parent_style, get_template_directory_uri() . '/style.css' );
     wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() . '/style.css', array( $parent_style ), 
 wp_get_theme()->get('Version') );
